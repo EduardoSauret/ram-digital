@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "ram-digital",
+    "default": "ram-digital"
+  }
+}
