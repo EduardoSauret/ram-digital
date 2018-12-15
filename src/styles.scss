@@ -1,32 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import '~normalize.css/normalize.css';
+// @import '~normalize.css/normalize.css';
 
-html *
-{
-   font-family: "Roboto";
-   color:  #353C62;
+html * {
+  font-family: "Roboto";
+  color: #353C62;
 }
 
 h1 {
-    font-size: 48px;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  line-height: 1.7;
+  opacity: .6;
 }
 
 .img-responsive {
-    width: 100%;
+  width: 100%;
 }
 
 .content-box {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .content {
-    margin: 0 auto;
-    max-width: 880px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 80px;
-    overflow: visible;
+  margin: 0 auto;
+  max-width: 880px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 80px;
+  overflow: visible;
+}
+
+.card {
+  background: #EFF2F3;
+  padding: 16px;
+  margin: 8px;
 }
