@@ -1,30 +1,32 @@
-<div style="height: 100vh;">
-  <mat-toolbar class="mat-elevation-z5" color="secondary">
-    <span><img src="../../../../assets/RamDigital_Logo.jpg" class="logo"></span>
-    <!-- This fills the remaining space of the current row -->
-    <span class="fill-space"></span>
-    <div fxShow="true" fxHide.lt-md="true">
-      <!-- <button mat-button routerLink="/to-do-list">To do list</button>
+<mat-toolbar class="mat-elevation-z5" color="secondary">
+  <span><img src="../../../../assets/RamDigital_Logo.png" class="logo"></span>
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-space"></span>
+  <div fxShow="true" fxHide.lt-md="true">
+    <!-- <button mat-button routerLink="/to-do-list">To do list</button>
           <button mat-button routerLink="/forms">Forms</button>
           <button mat-button routerLink="/recipes">Recipes</button>
           <button mat-button routerLink="/shopping-list">Shopping List</button> -->
-      <button mat-button>Home</button>
-      <button mat-button>About</button>
-      <button mat-button>Services</button>
-    </div>
-    <div fxShow="true" fxHide.gt-sm="true">
-      <button mat-button (click)="sidenav.toggle()">Menu</button>
-    </div>
-  </mat-toolbar>
-  <mat-sidenav-container fxShow="true" fxHide.gt-sm="true" fxFill>
-    <mat-sidenav fxLayout="column" #sidenav mode="over" opened="false">
-      <div fxLayout="column">
-        <button (click)="sidenav.toggle()" href="#" mat-button>Close</button>
-        <button mat-button>Home</button>
-        <button mat-button>About</button>
-        <button mat-button>Services</button>
-      </div>
-    </mat-sidenav>
-    <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content>
-  </mat-sidenav-container>
+    <button mat-button (click)="scrollToElement(home)">Home</button>
+    <button mat-button (click)="scrollToElement(services)">Services</button>
+    <button mat-button (click)="scrollToElement(products)">Products</button>
+  </div>
+  <div fxShow="true" fxHide.gt-sm="true">
+    <button mat-button>Menu</button>
+  </div>
+</mat-toolbar>
+
+<div #home>
+  <br>
+  <app-banner></app-banner>
+</div>
+<app-customers></app-customers>
+<app-benefits></app-benefits>
+<div #services>
+  <br>
+  <br>
+  <app-services></app-services>
+</div>
+<div #products>
+  <app-products></app-products>
 </div>

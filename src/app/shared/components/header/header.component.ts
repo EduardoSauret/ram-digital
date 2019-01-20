@@ -23,6 +23,10 @@ export class HeaderComponent implements OnInit {
     // this.loadMenus();
   }
 
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+  }
 
   // private loadMenus(): void {
   //   this.menuItems = [
