@@ -3,10 +3,6 @@
   <!-- This fills the remaining space of the current row -->
   <span class="fill-space"></span>
   <div fxShow="true" fxHide.lt-md="true">
-    <!-- <button mat-button routerLink="/to-do-list">To do list</button>
-          <button mat-button routerLink="/forms">Forms</button>
-          <button mat-button routerLink="/recipes">Recipes</button>
-          <button mat-button routerLink="/shopping-list">Shopping List</button> -->
     <button mat-button (click)="scrollToElement(home)">Home</button>
     <button mat-button (click)="scrollToElement(services)">Services</button>
     <button mat-button (click)="scrollToElement(products)">Products</button>
@@ -17,16 +13,15 @@
 </mat-toolbar>
 
 <div #home>
-  <br>
-  <app-banner></app-banner>
-</div>
-<app-customers></app-customers>
-<app-benefits></app-benefits>
-<div #services>
-  <br>
-  <br>
-  <app-services></app-services>
-</div>
-<div #products>
-  <app-products></app-products>
-</div>
+    <br>
+    <app-banner></app-banner>
+  </div>
+  <app-customers></app-customers>
+  <app-benefits></app-benefits>
+  <div #services>
+    <app-services></app-services>
+  </div>
+  <div #products>
+    <app-products></app-products>
+  </div>
+  

@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 
 
 @Component({
@@ -14,8 +15,9 @@ export class HeaderComponent implements OnInit {
   menuItems: any[];
   progressBarMode: string;
   currentLang: string;
+  topOfElement: any;
 
-  constructor() {
+  constructor(private route: ActivatedRoute, private router: Router) {
     // this.appConfig = appConfig;
   }
 
@@ -23,9 +25,15 @@ export class HeaderComponent implements OnInit {
     // this.loadMenus();
   }
 
+  // scrollToElement($element): void {
+  //   console.log($element);
+  //   $element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  // }
+
   scrollToElement($element): void {
     console.log($element);
-    $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    // this.topOfElement = $element.offsetTop - 64;
+    // window.scroll({ top: this.topOfElement, behavior: 'smooth' });
   }
 
   // private loadMenus(): void {
