@@ -19,6 +19,30 @@ mat-toolbar {
 
 .logo {
   height: 48px;
+  cursor: pointer;
+}
+
+.mat-sidenav {
+  width: 240px;
+
+  .logo {
+    padding-left: 16px;
+    cursor: pointer;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    padding: 16px 26px 16px 26px;
+    line-height: 1.2;
+  }
+
+}
+
+.mat-drawer-container {
+  background: #fff;
 }
 
 //================ BANNER

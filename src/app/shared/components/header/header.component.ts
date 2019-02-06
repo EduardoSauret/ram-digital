@@ -1,5 +1,6 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { MatSidenav } from '@angular/material';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class HeaderComponent implements OnInit {
   progressBarMode: string;
   currentLang: string;
   topOfElement: any;
+  @ViewChild('snav') public snav: MatSidenav;
 
   constructor(private route: ActivatedRoute, private router: Router) {
     // this.appConfig = appConfig;
@@ -32,6 +34,7 @@ export class HeaderComponent implements OnInit {
 
   scrollToElement($element): void {
     console.log($element);
+    this.snav.close();
     this.topOfElement = $element.offsetTop - 64;
     window.scroll({ top: this.topOfElement, behavior: 'smooth' });
   }
