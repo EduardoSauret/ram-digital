@@ -3,9 +3,10 @@
   <!-- This fills the remaining space of the current row -->
   <span class="fill-space"></span>
   <div fxShow="true" fxHide.lt-md="true">
-    <button mat-button (click)="scrollToElement(home)">Home</button>
-    <button mat-button (click)="scrollToElement(services)">Services</button>
-    <button mat-button (click)="scrollToElement(products)">Products</button>
+    <button mat-button (click)="scrollToElement(home)">Inicio</button>
+    <button mat-button (click)="scrollToElement(services)">Servicios</button>
+    <button mat-button (click)="scrollToElement(products)">Productos</button>
+    <button mat-button (click)="scrollToElement(contact)">Contacto</button>
   </div>
   <div fxShow="true" fxHide.gt-sm="true">
     <button mat-button>Menu</button>
@@ -24,4 +25,10 @@
   <div #products>
     <app-products></app-products>
   </div>
+
+    <app-map></app-map>
+
+  <div #contact>
+      <app-footer></app-footer>
+    </div>
   

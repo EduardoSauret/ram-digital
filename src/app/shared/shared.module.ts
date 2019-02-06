@@ -10,6 +10,8 @@ import { CustomersComponent } from '../modules/customers/customers.component';
 import { BenefitsComponent } from '../modules/benefits/benefits.component';
 import { ServicesComponent } from '../modules/services/services.component';
 import { ProductsComponent } from '../modules/products/products.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MapComponent } from '../modules/map/map.component';
 
 @NgModule({
   imports: [
@@ -26,6 +28,8 @@ import { ProductsComponent } from '../modules/products/products.component';
     BenefitsComponent,
     ServicesComponent,
     ProductsComponent,
+    FooterComponent,
+    MapComponent
   ],
   exports: [
     CommonModule,
@@ -37,7 +41,8 @@ import { ProductsComponent } from '../modules/products/products.component';
     CustomersComponent,
     BenefitsComponent,
     ServicesComponent,
-    ProductsComponent
+    ProductsComponent,
+    MapComponent
   ]
 })
 
