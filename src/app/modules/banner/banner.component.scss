@@ -3,7 +3,7 @@
 }
 
 .content {
-    display: flex;
+    
 }
 
 .one {
@@ -13,8 +13,9 @@
 .two {
     //background: yellow;
     padding: 36px;
+    padding-bottom: 0;
 }
 
 .banner {
-    max-height: 460px;
+    max-height: 400px;
 }

@@ -1,3 +1,21 @@
+section {
+  background: rgb(247, 247, 247);
+  padding-top: 38px;  
+  padding-bottom: 38px
+}
+
 .content h2 {
-    text-align: center;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  padding: 12px;
+  // margin: 8px;
+  img {
+    height: 222px;
   }
+  p {
+    margin-top: 0;
+  }
+}

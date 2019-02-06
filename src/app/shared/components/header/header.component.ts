@@ -32,8 +32,8 @@ export class HeaderComponent implements OnInit {
 
   scrollToElement($element): void {
     console.log($element);
-    // this.topOfElement = $element.offsetTop - 64;
-    // window.scroll({ top: this.topOfElement, behavior: 'smooth' });
+    this.topOfElement = $element.offsetTop - 64;
+    window.scroll({ top: this.topOfElement, behavior: 'smooth' });
   }
 
   // private loadMenus(): void {
