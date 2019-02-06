@@ -5,6 +5,17 @@ section {
     padding-bottom: 48px;
 }
 
-p, h4, h3, h2{
+p, h4, h3, h2, mat-icon{
     color: white;
 }
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+mat-icon {
+    margin-right: 12px;
+}
+
+
