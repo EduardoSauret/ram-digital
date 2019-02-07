@@ -13,8 +13,13 @@ section {
   padding: 12px;
   padding-top: 0;
   // margin: 8px;
+  .img-container {
+    max-width: 222px;
+    text-align: center;
+    margin: 0 auto;
+  }
   img {
-    height: 222px;
+    width: 100%;
   }
   p {
     margin: 0;
